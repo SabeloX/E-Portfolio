@@ -4,8 +4,10 @@ import './dashboard.css';
 
 const Dashboard = () => {
     return (
-        <div className="dashboard">
-            <img className="profile_image" src={profileImage} alt="Sabelo"/>
+        <div className="dashboard_container">
+            <div className="profile_image_container">
+                <img className="profile_image" src={profileImage} alt="Sabelo"/>
+            </div>
         </div>
     )
 }

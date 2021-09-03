@@ -1,10 +1,16 @@
-.dashboard{
-    background: linear-gradient(to right, #232b2b, black) no-repeat;
-    height: 100vh;
+.dashboard_container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 10px;
+}
+.profile_image_container{
+    width: 400px;
+    height: 600px;
 }
 img.profile_image{
-    box-sizing: border-box;
-    max-width: 400px;
-    margin: 10px 20px;
+    max-height: 100%;
+    max-width: 100%;
     border-radius: 20px;
 }
