@@ -1,0 +1,9 @@
+.dashboard{
+    background: linear-gradient(to right, lightgrey, black) no-repeat;
+}
+img.profile_image{
+    box-sizing: border-box;
+    max-width: 400px;
+    margin: 10px 20px;
+    border-radius: 20px;
+}
