@@ -27,7 +27,7 @@ const Work = () => {
         <div className="work_container">
             <div className="projects">
                 <h1>Some Of My Work</h1>
-                <p>These are few of my works on Web Development</p>
+                <p>These are a few examples of my work on Web Development</p>
                 <div className="project_list">
                     <ul>
                         {
