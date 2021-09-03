@@ -1,5 +1,6 @@
 .dashboard{
-    background: linear-gradient(to right, lightgrey, black) no-repeat;
+    background: linear-gradient(to right, #232b2b, black) no-repeat;
+    height: 100vh;
 }
 img.profile_image{
     box-sizing: border-box;
