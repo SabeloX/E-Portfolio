@@ -4,6 +4,7 @@ import varsityEats from '../../assets/varsityeatsuct.co.za_(Nexus 5X).png';
 import workout from '../../assets/tinder-clone-75b11.web.app_signin(Nexus 5X) (1).png';
 import tikTok from '../../assets/tik-tok-f6910.web.app_(Nexus 5X).png';
 import NewsTicker, { Directions } from 'react-advanced-news-ticker';
+import styled from 'styled-components';
 
 const works = [
     {
@@ -35,7 +36,25 @@ const skills = [
     'etc...'
 ];
 
-const Work = () => {
+const Button = styled.button`
+    padding: 20px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    margin: 10px;
+    width: 150px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 2px #456;
+    cursor: pointer;
+    font-family: 'Indie Flower', cursive;
+    font-size: 15px;
+`;
+
+const Work = ({history}) => {
+    const route = (path) => {
+        history.push(`/${path}`);
+    }
     const tickerRef = useRef(null);
     return (
         <div className="work_container">
@@ -73,6 +92,13 @@ const Work = () => {
                         ))
                     }
                 </NewsTicker>
+            </div>
+            <div className="nav">
+                <ul>
+                    <li><Button onClick={() => route('')}>Go Back Home</Button></li>
+                    <li><Button onClick={() => route('about')}>About Me</Button></li>
+                    <li><Button onClick={() => route('contact')}>Keep In Touch</Button></li>
+                </ul>
             </div>
         </div>
     )
