@@ -2,24 +2,29 @@ import React from 'react';
 import profileImage from '../../assets/DSC_7953.jpg';
 import './dashboard.css';
 import styled, { keyframes } from 'styled-components';
-import { fadeInLeftBig, jello } from 'react-animations';
+import { fadeInLeftBig, zoomInDown, zoomInUp } from 'react-animations';
 
 const fadeAnimation = keyframes`${fadeInLeftBig}`;
-const jelloAnimation = keyframes`${jello}`;
+const zoomInDownAnimation = keyframes`${zoomInDown}`;
+const zoomInUpAnimation = keyframes`${zoomInUp}`;
 
 const FadeIn = styled.div`
     animation: 2s ${fadeAnimation};
     width: 400px;
     margin-right: 10px;
 `;
-const Jello = styled.div`
-    animation: 3s ${jelloAnimation};
+const ZoomInsDown = styled.div`
+    animation: 3s ${zoomInDownAnimation};
     margin-left: 10px;
     color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+`;
+const ZoomInsUp = styled.div`
+    animation: 3s ${zoomInUpAnimation};
+    margin: 10px;
 `;
 const Button = styled.button`
     padding: 20px;
@@ -32,6 +37,7 @@ const Button = styled.button`
     border-radius: 10px;
     box-shadow: 4px 4px 2px #456;
     cursor: pointer;
+    font-family: 'Indie Flower', cursive;
 `;
 
 const Dashboard = () => {
@@ -41,17 +47,17 @@ const Dashboard = () => {
                 <img className="profile_image" src={profileImage} alt="Sabelo"/>
             </FadeIn>
             <div className="info_section">
-                <Jello>
-                    <h2>Hi, I'm A Programmer!</h2>
+                <ZoomInsDown>
+                    <h1>Hi, I'm A Programmer!</h1>
                     <p>My name is Sabelo and I do coding for a living and for fun.</p>
-                </Jello>
-                <div className="navigation">
+                </ZoomInsDown>
+                <ZoomInsUp className="navigation">
                     <ul>
-                        <li><Button>Work</Button></li>
+                        <li><Button>My Work</Button></li>
                         <li><Button>About Me</Button></li>
                         <li><Button>Keep In Touch</Button></li>
                     </ul>
-                </div>
+                </ZoomInsUp>
             </div>
         </div>
     )

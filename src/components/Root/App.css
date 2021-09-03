@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
 .App{
     background: linear-gradient(to right, #232b2b, black) no-repeat;
-    height: 100vh;
+    /* height: 100vh; */
 }
