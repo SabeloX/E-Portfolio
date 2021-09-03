@@ -58,12 +58,11 @@ const Dashboard = ({history}) => {
                 <ZoomInsDown>
                     <h1>Hi, I'm A Software Engineer!</h1>
                     <p>My name is Sabelo and I do coding for a living and for fun.</p>
+                    <p>Browse around to see my work and get in touch with me on social media platoforms listed below.</p>
                 </ZoomInsDown>
                 <ZoomInsUp className="navigation">
                     <ul>
                         <li><Button onClick={() => route('work')}>My Work</Button></li>
-                        <li><Button onClick={() => route('about')}>About Me</Button></li>
-                        <li><Button onClick={() => route('contact')}>Keep In Touch</Button></li>
                     </ul>
                     <div class="contact">
                         <ul>

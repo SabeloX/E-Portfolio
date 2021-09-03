@@ -96,8 +96,6 @@ const Work = ({history}) => {
             <div className="nav">
                 <ul>
                     <li><Button onClick={() => route('')}>Go Back Home</Button></li>
-                    <li><Button onClick={() => route('about')}>About Me</Button></li>
-                    <li><Button onClick={() => route('contact')}>Keep In Touch</Button></li>
                 </ul>
             </div>
         </div>
