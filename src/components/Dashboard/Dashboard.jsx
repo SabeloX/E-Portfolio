@@ -1,5 +1,6 @@
 import React from 'react';
 import profileImage from '../../assets/DSC_7953.jpg';
+import './dashboard.css';
 
 const Dashboard = () => {
     return (
