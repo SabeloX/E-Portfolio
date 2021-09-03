@@ -45,7 +45,10 @@ const Button = styled.button`
     font-size: 15px;
 `;
 
-const Dashboard = () => {
+const Dashboard = ({history}) => {
+    const route = (path) => {
+        history.push(`/${path}`);
+    }
     return (
         <div className="dashboard_container">
             <FadeIn>
@@ -58,9 +61,9 @@ const Dashboard = () => {
                 </ZoomInsDown>
                 <ZoomInsUp className="navigation">
                     <ul>
-                        <li><Button>My Work</Button></li>
-                        <li><Button>About Me</Button></li>
-                        <li><Button>Keep In Touch</Button></li>
+                        <li><Button onClick={() => route('work')}>My Work</Button></li>
+                        <li><Button onClick={() => route('about')}>About Me</Button></li>
+                        <li><Button onClick={() => route('contact')}>Keep In Touch</Button></li>
                     </ul>
                     <div class="contact">
                         <ul>
