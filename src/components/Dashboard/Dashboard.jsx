@@ -66,21 +66,15 @@ const Dashboard = () => {
                         <ul>
                             <li>
                                 <p>Instagram</p>
-                                <IconButton>
-                                    <a href="https://www.instagram.com/xero_king/" target="__blank" ><InstagramIcon fontSize="large"/></a>
-                                </IconButton>
+                                <a href="https://www.instagram.com/xero_king/" target="__blank" ><InstagramIcon fontSize="large"/></a>
                             </li>
                             <li>
                                 <p>Email</p>
-                                <IconButton>
-                                    <a href="mailto:sabelomtw@gmail.com" target="__blank" ><EmailSharpIcon fontSize="large"/></a>
-                                </IconButton>
+                                <a href="mailto:sabelomtw@gmail.com" target="__blank" ><EmailSharpIcon fontSize="large"/></a>
                             </li>
                             <li>
                                 <p>Github</p>
-                                <IconButton>
-                                    <a href="https://github.com/SabeloX" target="__blank" ><GitHubIcon fontSize="large"/></a>
-                                </IconButton>
+                                <a href="https://github.com/SabeloX" target="__blank" ><GitHubIcon fontSize="large"/></a>
                             </li>
                         </ul>
                     </div>
