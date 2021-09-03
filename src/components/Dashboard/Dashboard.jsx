@@ -6,7 +6,6 @@ import { fadeInLeftBig, zoomInDown, zoomInUp } from 'react-animations';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import EmailSharpIcon from '@mui/icons-material/EmailSharp';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import { IconButton } from '@mui/material';
 
 const fadeAnimation = keyframes`${fadeInLeftBig}`;
 const zoomInDownAnimation = keyframes`${zoomInDown}`;
