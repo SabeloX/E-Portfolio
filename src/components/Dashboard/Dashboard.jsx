@@ -5,6 +5,7 @@ import styled, { keyframes } from 'styled-components';
 import { fadeInLeftBig, zoomInDown, zoomInUp } from 'react-animations';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import EmailSharpIcon from '@mui/icons-material/EmailSharp';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
 const fadeAnimation = keyframes`${fadeInLeftBig}`;
@@ -77,6 +78,10 @@ const Dashboard = ({history}) => {
                             <li>
                                 <p>Github</p>
                                 <a href="https://github.com/SabeloX" target="__blank" ><GitHubIcon fontSize="large"/></a>
+                            </li>
+                            <li>
+                                <p>LinkedIn</p>
+                                <a href="https://www.linkedin.com/in/sabelo-mtetwa/" target="__blank" ><LinkedInIcon fontSize="large"/></a>
                             </li>
                         </ul>
                     </div>
