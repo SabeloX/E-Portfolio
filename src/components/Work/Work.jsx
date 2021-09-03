@@ -35,7 +35,7 @@ const Work = () => {
                                 <li>
                                     <h3>{work.name}</h3>
                                     <img src={work.image} alt={work.name}/>
-                                    <p>Visit: <a>{work.url}</a></p>
+                                    <p><a href={work.url} target="__blank">Check {work.name}</a></p>
                                 </li>
                             ))
                         }
